@@ -5,8 +5,8 @@ const index = () => {
   //console.log(services)
   return(
    <div className="flex flex-col flex-grow px-6 pt-1">
-    <h5 className="my-3 font-medium"> I am currently pursuing B.Tech Degree(Third Year) in Information technology 
-  Engineering from Chitkara University. I have love to work in 
+    <h5 className="my-3 font-medium"> I am currently pursuing B.Tech Degree(Third Year) in 
+    Information Technology from Chitkara University. I have love to work in 
    Full Stack Web Development and intrest in Devops
     </h5>
 
