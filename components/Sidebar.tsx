@@ -3,6 +3,7 @@ import {AiFillGithub,AiFillLinkedin,AiFillInstagram} from 'react-icons/ai';
 import {GoLocation} from 'react-icons/go';
 import {GiTie} from 'react-icons/gi'
 import { useTheme } from 'next-themes';
+import Image from 'next/image';
 
 const Sidebar = () => {
     const { theme,setTheme } = useTheme();
@@ -10,9 +11,13 @@ const Sidebar = () => {
         setTheme(theme === 'light' ? 'dark' : 'light');
     }
   return <div>
-      <img src="https://user-images.githubusercontent.com/86554356/151674745-eed524f3-cd2d-4eac-b8b7-5debdbbbe972.png" 
+      <Image src="https://user-images.githubusercontent.com/86554356/151674745-eed524f3-cd2d-4eac-b8b7-5debdbbbe972.png" 
       alt="user image" 
-      className="w-32 h-32 mx-auto rounded-full"/>
+      className="mx-auto rounded-full "
+      width='128'
+      height='128'
+      quality='100'
+      />
 
       <h3 className="my-4 text-3xl font-medium font-kaushan">
      <span className="text-green">Puneet </span>

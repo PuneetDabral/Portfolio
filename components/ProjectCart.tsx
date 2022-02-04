@@ -4,6 +4,8 @@ import { AiFillGithub, AiFillProject } from 'react-icons/ai';
 import { MdClose } from 'react-icons/md';
 import { IProject } from '../types';
 
+import Image from 'next/image';
+
 const ProjectCart:FunctionComponent<{
 project:IProject
 }> = ({
@@ -13,7 +15,9 @@ project:IProject
 }) => {
     const [showDetail, setShowDetail] = useState(false);
   return <div>
-      <img src={image_path} alt={name} className='cursor-pointer' onClick={()=>setShowDetail(true)}/>
+      <Image src={image_path} alt={name} className='cursor-pointer' onClick={()=>setShowDetail(true)} 
+      width='300' height='150' layout='responsive'/>
+      {/* <img src={image_path} alt={name} className='cursor-pointer' onClick={()=>setShowDetail(true)}/> */}
       <p className='my-2 text-center'>{name}</p>
 
       {
@@ -22,7 +26,8 @@ project:IProject
 
       <div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 gap-x-12 md:grid-cols-2 dark:text-white dark:bg-dark-100">
           <div>
-          <img src={image_path} alt={name} />
+          <Image src={image_path} alt={name} width='300' height='150' layout='responsive'/>
+          {/* <img src={image_path} alt={name} /> */}
             <div className='flex justify-center my-4 space-x-3'>
              <a href={github_url} className='flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200' >
               <AiFillGithub /><span>Github</span>
