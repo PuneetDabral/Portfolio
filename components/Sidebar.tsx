@@ -29,20 +29,20 @@ const Sidebar = () => {
      </p>
 
     <a className="flex items-center justify-center px-2 py-1 my-3 bg-gray-200 rounded-full dark:bg-dark-200" 
-     href="" download="">
+    href="images/1955991617_Puneet.pdf" download='Puneet Kumar Resume'>
     <GiTie className="w-6 h-6"/>
      Download Resume
      </a>
   
      {/* //socail icons */}
      <div className="flex justify-around w-9/12 my-5 text-green md:w-full">  {/*width w-9/12 75% of screen md is for large or mediam screen*/}
-     <a href="" >
+     <a href="https://www.instagram.com/puneet__dabral/" >
      <AiFillInstagram className="w-6 h-6 courser-pointer"/>
      </a>
-     <a href="" >
+     <a href="https://github.com/PuneetDabral" >
      <AiFillGithub className="w-6 h-6 courser-pointer"/>
      </a>
-     <a href="" >
+     <a href="https://www.linkedin.com/in/puneet-dabral-kumar-90566521b/" >
      <AiFillLinkedin className="w-6 h-6 courser-pointer"/>
      </a>
      </div>

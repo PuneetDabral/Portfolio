@@ -28,9 +28,9 @@ project:IProject
           showDetail && (
       
 
-      <div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 gap-x-12 md:grid-cols-2 dark:text-white dark:bg-dark-100">
-          <motion.div   variants={stagger} initial='initial' animate='animate'>
-       <motion.div variants={fadeINUp}>  <Image src={image_path} alt={name} width='300' height='150' layout='responsive'/> </motion.div> 
+      <div className="absolute top-0 left-0 z-10 grid w-full h-auto p-2 text-black bg-gray-100 rounded-lg md:p-10 gap-x-12 md:grid-cols-2 dark:text-white dark:bg-dark-100">
+          <motion.div  variants={stagger} initial='initial' animate='animate'>
+       <motion.div  className='border-4 border-gray-100' variants={fadeINUp}>  <Image src={image_path} alt={name} width='300' height='150' layout='responsive'/> </motion.div> 
           {/* <img src={image_path} alt={name} /> */}
             <motion.div className='flex justify-center my-4 space-x-3' variants={fadeINUp}>
              <a href={github_url} className='flex items-center px-4 py-2 space-x-3 text-lg bg-gray-200 dark:bg-dark-200' >
