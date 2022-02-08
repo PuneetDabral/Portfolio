@@ -24,5 +24,5 @@ export interface IProject {
 
 }
 
-export type Category = "react" | "node" | "express" | "django" | "mongo"|"open";
+export type Category = "react" | "node" | "express" | "django" | "mongo"|"opensource";
 

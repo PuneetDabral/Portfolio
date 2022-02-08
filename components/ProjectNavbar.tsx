@@ -28,8 +28,7 @@ export const ProjectNavbar:FunctionComponent<{handlerFilterCategory:Function,act
       <NavItem value='all' {...props}/>
       <NavItem value='react'{...props} />
       <NavItem value='node' {...props}/>
-      <NavItem value='django' {...props}/>
       <NavItem value='mongo' {...props}/>
-      <NavItem value='express' {...props}/>
+      <NavItem value='opensource' {...props}/>
   </div>
   )};
