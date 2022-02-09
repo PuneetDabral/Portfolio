@@ -3,12 +3,16 @@ import ServiceCard from '../components/ServiceCard';
 import {services} from '../data'
 import { motion } from 'framer-motion';
 import { fadeINUp, routeAnimation, stagger } from '../animation';
+import Head from 'next/head';
 
 const index = () => {
   //console.log(services)
   return(
    <motion.div className="flex flex-col flex-grow px-6 pt-1" variants={routeAnimation} initial='initial'
     animate='animate' exit='exit'>
+      <Head>
+        <title>Portfolio | Puneet</title>
+      </Head>
     <h5 className="my-3 font-medium"> I am currently pursuing B.Tech Degree(Third Year) in 
     Information Technology from Chitkara University. I have love to work in 
    Full Stack Web Development and intrest in Devops

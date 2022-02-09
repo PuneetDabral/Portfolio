@@ -4,10 +4,14 @@ import { languages, tools } from '../data';
 import { motion } from 'framer-motion';
 import { fadeINUp } from '../animation';
 import { routeAnimation } from './../animation';
+import Head from 'next/head';
 
 const resume = () => {
 
   return <motion.div className="px-6 py-4" variants={routeAnimation} initial='initial' animate='animate' exit='exit'>
+     <Head>
+        <title>Resume | Puneet</title>
+    </Head>
    {/* educayion &exp */}
    <div className="grid gap-6 md:grid-cols-2">
 

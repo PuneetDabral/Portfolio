@@ -59,11 +59,11 @@ export const languages: Skill[] = [
     name: "DSA",
     level: "60",
   },
-  {
-    Icon: BsCircleFill,
-    name: "Python",
-    level: "45",
-  },
+  // {
+  //   Icon: BsCircleFill,
+  //   name: "Python",
+  //   level: "45",
+  // },
   {
     Icon: BsCircleFill,
     name: "Java Script",
@@ -110,6 +110,12 @@ export const tools: Skill[] = [
     name: "Photoshop",
     level: "45",
   },
+  {
+    Icon: BsCircleFill,
+    name: "Linux",
+    level: "55",
+
+  }
 ];
 
 
